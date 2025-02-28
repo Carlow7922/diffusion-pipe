@@ -62,14 +62,11 @@ video_clip_mode = 'single_middle'
 
 [model]
 # flux, ltx-video, or hunyuan-video
-type = 'hunyuan-video'
+type = 'wan'
 # Can load Hunyuan Video entirely from the ckpt path set up for the official inference scripts.
 #ckpt_path = '/home/anon/HunyuanVideo/ckpts'
 # Or you can load it by pointing to all the ComfyUI files.
-transformer_path = '/root/base_models/hunyuan_video_720_cfgdistill_fp8_e4m3fn.safetensors'
-vae_path = '/root/base_models/hunyuan_video_vae_bf16.safetensors'
-llm_path = '/root/base_models/llava-llama-3-8b-text-encoder-tokenizer'
-clip_path = '/root/autodl-fs/base_models/clip-vit-large-patch14'
+ckpt_path = '/root/base_models/wan2.1/Wan2.1-T2V-1.3B'
 # Base dtype used for all models.
 dtype = 'bfloat16'
 # Hunyuan Video supports fp8 for the transformer when training LoRA.
